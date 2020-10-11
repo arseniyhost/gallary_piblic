@@ -1,0 +1,138 @@
+.main-shop {
+    overflow: hidden;
+}
+
+.shop {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    .store {
+        width: 90vw;
+
+        .box-main {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            .block {
+                img {
+                    max-width: 100%;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                        margin: 15px 0 15px;
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+
+                    a {
+                        color: #c4c4c4;
+                        text-decoration: none;
+                        background: #ECECEC;
+                        font-size: 20px;
+                        padding: 10px;
+                        border: none;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all .4s;
+                    }
+
+                    a:hover {
+                        color: #000;
+
+                    }
+                }
+            }
+        }
+
+        .box {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+
+            .block {
+
+                img {
+                    max-width: 100%;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                        margin: 15px 0 15px;
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+
+                    a {
+                        color: #c4c4c4;
+                        background: #ECECEC;
+                        font-size: 20px;
+                        padding: 10px;
+                        border: none;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all .4s;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #000;
+
+                    }
+                }
+            }
+        }
+        .box:last-child {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .shop {
+        h3 {
+
+        }
+        .store {
+            .box {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .shop {
+        h3 {
+
+        }
+        .store {
+            .box {
+               grid-template-columns: 1fr;
+               grid-template-rows: 1fr;
+            }
+        }
+    }
+}

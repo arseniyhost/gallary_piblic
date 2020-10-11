@@ -1,0 +1,52 @@
+.footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+
+    .block {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-name {
+            p {
+                margin: 0;
+            }
+        }
+
+        .text-rules {}
+
+        .text-icons {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            svg:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .footer {
+        .block {
+            flex-direction: column;
+            justify-content: center;
+
+            .text-name, .text-rules {
+                margin-bottom: 15px;
+            }
+
+            .text-icons {
+                svg:first-child {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+} 
