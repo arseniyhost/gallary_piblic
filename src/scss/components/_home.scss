@@ -1,0 +1,112 @@
+.main {
+    overflow: hidden;
+
+    #photo {
+        width: 100%;
+        height: 80vh;
+        background-image: url("./../../img/main_photo.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .main_footer {
+
+        margin: 62px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .box {
+            width: 90vw;
+            display: flex;
+            justify-content: space-between;
+
+            .text-icons {
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                svg:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.content {
+    overflow: hidden;
+}
+
+.progress {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 720px) {
+    .main {
+        .main_footer {
+            .box {
+                .text-icons {
+                    svg:first-child {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .main {
+        .main_footer {
+            .box {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .text-name,
+                .text-rules {
+                    margin-bottom: 30px;
+                }
+
+                .text-icons {
+                    svg:first-child {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {
+        #photo {
+            width: 100%;
+            height: 70vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main {
+        #photo {
+            width: 100%;
+            height: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .main {
+        #photo {
+            width: 100%;
+            height: 35vh;
+        }
+    }
+}
